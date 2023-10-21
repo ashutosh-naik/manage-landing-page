@@ -2,38 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/vite.svg" rel="icon" type="image/svg+xml" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link
-      rel="shortcut icon"
       href="/images/favicon-32x32.png"
+      rel="shortcut icon"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link href="style.css" rel="stylesheet" />
     <title>Manage landing page</title>
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="/"><img src="images/logo.svg" alt="manage-logo" /></a>
-          <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <a href="/"><img alt="manage-logo" src="images/logo.svg" /></a>
+          <button aria-controls="primary-navigation" class="mobile-nav-toggle">
             <img
+              alt="hamburger-icon"
+              aria-hidden="true"
               class="icon-hamburger"
               src="images/icon-hamburger.svg"
-              alt="hamburger-icon"
-              aria-hidden="true"
             />
             <img
-              class="icon-close"
-              src="images/icon-close.svg"
               alt="hamburger-icon"
               aria-hidden="true"
+              class="icon-close"
+              src="images/icon-close.svg"
             />
             <span class="visually-hidden">Menu</span>
           </button>
           <nav class="primary-navigation" id="primary-navigation">
-            <ul aria-label="Primary" role="list" class="nav-list">
+            <ul aria-label="Primary" class="nav-list" role="list">
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Product</a></li>
               <li><a href="#">About Us</a></li>
@@ -62,8 +62,8 @@
             </div>
             <div>
               <img
-                src="images/illustration-intro.svg"
                 alt="illustration-intro"
+                src="images/illustration-intro.svg"
               />
             </div>
           </div>
@@ -144,8 +144,8 @@
       <div class="container">
         <div class="even-columns">
           <div>
-            <a href="#"><img src="images/logo.svg" alt="manage-logo" /></a>
-            <ul role="list" aria-label="Social-links">
+            <a href="#"><img alt="manage-logo" src="images/logo.svg" /></a>
+            <ul aria-label="Social-links" role="list">
               <li><a aria-label="facebook" href="#"></a></li>
               <li><a aria-label="youtube" href="#"></a></li>
               <li><a aria-label="twitter" href="#"></a></li>
@@ -168,7 +168,7 @@
           </div>
           <div>
             <form action="">
-              <input type="email" placeholder="Updates in your inbox..." />
+              <input placeholder="Updates in your inbox..." type="email" />
               <button class="button">Go</button>
             </form>
             <p>Copyright 2023. All Rights Reserved</p>
@@ -177,6 +177,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <script src="/main.js" type="module"></script>
   </body>
 </html>
