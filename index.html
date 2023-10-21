@@ -4,23 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Manage landing page</title>
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="/"><img src="images/logo.svg" alt="manage-logo" /></a>
-        <nav class="primary-navigation">
-          <ul aria-label="Primary" role="list" class="nav-list">
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </nav>
-        <button class="button">Get Started</button>
+        <div class="nav-wrapper">
+          <a href="/"><img src="images/logo.svg" alt="manage-logo" /></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+            <img
+              class="icon-hamburger"
+              src="images/icon-hamburger.svg"
+              alt="hamburger-icon"
+              aria-hidden="true"
+            />
+            <img
+              class="icon-close"
+              src="images/icon-close.svg"
+              alt="hamburger-icon"
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button" style="display: none">Get Started</button>
+        </div>
       </div>
     </header>
 
