@@ -9,8 +9,12 @@
       rel="shortcut icon"
       type="image/x-icon"
     />
-    <link href="style.css" rel="stylesheet" />
     <title>Manage landing page</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
   </head>
   <body>
     <header class="primary-header">
@@ -145,6 +149,12 @@
       <section class="carousel | padding-block-700">
         <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
         <!-- Carousel here -->
+        <ul class="slider">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
         <button class="button">Get Started</button>
       </section>
 
@@ -252,6 +262,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
     <script src="/main.js" type="module"></script>
   </body>
 </html>
