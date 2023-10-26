@@ -309,6 +309,7 @@ input:where([type="text"], [type="email"]) {
   .primary-footer-wrapper {
     grid-template-areas: "logo-social nav form";
   }
+
   .primary-footer-logo-social {
     align-items: flex-start;
     justify-content: space-between;
@@ -360,6 +361,7 @@ input:where([type="text"], [type="email"]) {
   .social-list {
     gap: var(--size-300);
   }
+
   .social-icon {
     width: var(--size-500);
   }
@@ -388,6 +390,35 @@ input:where([type="text"], [type="email"]) {
   opacity: 0.1;
   background-repeat: no-repeat;
   background-position: 5rem -5rem, 76rem -40rem; /* -15 -5, 80 -42 */
+}
+
+/* Numbered items */
+.numbered-items {
+  counter-reset: count;
+}
+
+.numbered-items li {
+  counter-increment: count;
+}
+
+.numbered-items div {
+  display: grid;
+  align-items: center;
+  column-gap: var(--size-400);
+  grid-template-columns: min-content 1fr;
+}
+
+.numbered-items p {
+  grid-column: 1 / -1;
+}
+
+.numbered-items div::before {
+  content: "0" counter(count);
+  background-color: var(--color-accent-400);
+  color: var(--color-neutral-100);
+  font-weight: var(--fw-bold);
+  padding: var(--size-200) var(--size-500);
+  border-radius: 100vw;
 }
 
 /* Utility classes */
